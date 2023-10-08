@@ -1,0 +1,171 @@
+.root {
+  --top_card: 60px;
+}
+
+.content {
+  width: 100%;
+
+  display: grid;
+}
+
+.header_bx {
+  padding: 50px;
+  width: 100%;
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  background: #2d3134;
+}
+
+.card_bx {
+  position: relative;
+  margin-top: 85px;
+  padding: 25px;
+  padding-top: 120px;
+  width: 240px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #252a30;
+  border-radius: 10px;
+}
+
+.card__img_bx {
+  position: absolute;
+  top: -85px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100%;
+}
+
+.card__img_bx::before {
+  position: absolute;
+  z-index: 2;
+  content: '';
+  width: 195px;
+  height: 195px;
+
+  background-color: #38aa97;
+  border-radius: 100%;
+
+  box-shadow: 0px 0px 10px 16px #03a88a29;
+}
+
+.card__img_bx > img{
+  z-index: 4;
+  width: 180px;
+  border-radius: 100%;
+}
+
+.card__description_bx {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__description_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  align-items: center;
+  text-align: center;
+}
+
+.card__description_subText {
+  font-size: 13rem;
+  font-weight: lighter;
+}
+
+.card__social_bx {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card__social_bx{
+  overflow: hidden;
+  height: 20px;
+  width: 100%;
+}
+
+.card__social_icon {
+  height: 20rem;
+  fill: #38aa97;
+}
+
+.card__social_icon:hover {
+  height: 22rem;
+  fill: #2be6c7;
+  transition: .2s ease-in-out;
+}
+
+.info_bx {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.info__skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info__skill_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info__skill_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info__skill_icon {
+  width: 50rem;
+  fill: #38aa97;
+}
+
+.info__exp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info__exp_card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: #38aa97;
+  border-radius: 10px;
+}
+
+.info__exp_t_title {
+  padding-bottom: 5px;
+  border-bottom: 1.5px solid #eaeaee;
+}
+
+.info__exp_text {
+  font-size: 14rem;
+}
